@@ -12,7 +12,7 @@ const quotes = [
         author: "Mark Twain",
     },
     {
-        quote: "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.",
+        quote: "Darkness cannot drive out darkness: only light can do that. \n Hate cannot drive out hate: only love can do that.",
         author: "Martin Luther King Jr.",
     },
     {
