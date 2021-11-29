@@ -4,8 +4,12 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
 document.body.appendChild(bgImage);
-if(chosenImage !== images[2]){
+if(chosenImage == images[1]){
+    document.querySelector("#quote").style.backgroundColor = "red";
     document.querySelector("#quote").style.color = "yellow";
+}else if(chosenImage == images[0]){
+    document.querySelector("#quote").style.backgroundColor = "yellow";
+    document.querySelector("#quote").style.color = "red";
 }
 // console.log(chosenImage);
 // console.log(bgImage);

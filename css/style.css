@@ -43,6 +43,7 @@ body{
 }
 #quote{
     margin-top:15vw;
+    display: inline-block;
     color:#fff;
 }
 img{
