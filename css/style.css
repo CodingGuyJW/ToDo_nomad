@@ -65,9 +65,11 @@ img{
 }
 
 @media (max-width:768px) {
+    #date{margin-top:120px}
     #clock{font-size:60px;}
     #quote{bottom:15%;}
 }
 @media (max-width:425px) {
+    #date{margin-top:90px}
     #clock{font-size:50px;}
 }
