@@ -8,15 +8,15 @@ body{
     display: none;
 }
 #date{
-    margin-top:10vw;
+    margin-top:160px;
 }
 #clock{
-    margin-top:0vw;
-    margin-bottom: 0vw;
-    font-size:5vw;
+    margin-top:0;
+    margin-bottom: 0;
+    font-size:80px;
 }
 #login-form{
-    margin-top:5vw;
+    margin-top:120px;
 }
 #login-form input[type="text"]{
     border:0px;
@@ -43,9 +43,13 @@ body{
     margin-left:10px;
 }
 #quote{
-    margin-top:15vw;
+    /* margin-top:300px; */
     display: inline-block;
     color:#fff;
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform: translateX(-50%);
 }
 img{
     opacity:0.3;
@@ -60,7 +64,11 @@ img{
     /* width:100%; */
 }
 
+@media (max-width:768px) {
+    #clock{font-size:60px;}
+    #quote{bottom:20%;}
+}
 @media (max-width:425px) {
-    #clock{font-size:15vw;}
-    #quote{margin-top:50vw;}
+    #clock{font-size:50px;}
+    #quote{bottom:25%;}
 }
