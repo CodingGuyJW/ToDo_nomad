@@ -22,6 +22,7 @@ body{
     border:0px;
     border-bottom:1px solid #fff;
     background: none;
+    color:#fff;
     text-align: center;
 }
 #todo-form{
@@ -61,5 +62,5 @@ img{
 
 @media (max-width:425px) {
     #clock{font-size:15vw;}
-    #quote{margin-top:60vw;}
+    #quote{margin-top:50vw;}
 }
