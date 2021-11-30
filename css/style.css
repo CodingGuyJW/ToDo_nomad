@@ -71,4 +71,5 @@ img{
 @media (max-width:425px) {
     #date{margin-top:50px}
     #clock{font-size:50px;}
+    #quote{bottom:5%;}
 }
