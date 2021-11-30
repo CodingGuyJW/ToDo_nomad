@@ -56,3 +56,14 @@ if (savedToDos !== null){
     parsedToDos.forEach(paintTodo);
 }
 
+function onHide(){
+    document.querySelector("#quote span:first-child").classList.add("hidden");
+    document.querySelector("#quote span:last-child").classList.add("hidden");
+}
+function onShow(){
+    document.querySelector("#quote span:first-child").classList.remove("hidden");
+    document.querySelector("#quote span:last-child").classList.remove("hidden");
+}
+
+toDoInput.addEventListener("focus",onHide);
+toDoInput.addEventListener("blur",onShow);

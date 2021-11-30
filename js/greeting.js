@@ -47,3 +47,16 @@ if(savedUsername === null){
 }
 
 logoutBtn.addEventListener("click", onLogout);
+
+
+function onHide(){
+    document.querySelector("#quote span:first-child").classList.add("hidden");
+    document.querySelector("#quote span:last-child").classList.add("hidden");
+}
+function onShow(){
+    document.querySelector("#quote span:first-child").classList.remove("hidden");
+    document.querySelector("#quote span:last-child").classList.remove("hidden");
+}
+
+loginInput.addEventListener("focus",onHide);
+loginInput.addEventListener("blur",onShow);
