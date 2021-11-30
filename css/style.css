@@ -60,6 +60,6 @@ img{
 }
 
 @media (max-width:425px) {
-    #clock{font-size:10vw;}
-    #quote{margin-top:50vw;}
+    #clock{font-size:15vw;}
+    #quote{margin-top:80vw;}
 }
