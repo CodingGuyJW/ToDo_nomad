@@ -65,5 +65,7 @@ function onShow(){
     document.querySelector("#quote span:last-child").classList.remove("hidden");
 }
 
-toDoInput.addEventListener("focus",onHide);
-toDoInput.addEventListener("blur",onShow);
+if(window.innerWidth <= 768){
+    toDoInput.addEventListener("focus",onHide);
+    toDoInput.addEventListener("blur",onShow);
+}
