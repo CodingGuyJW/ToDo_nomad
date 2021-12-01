@@ -74,10 +74,12 @@ img{
 @media (max-width:768px) {
     #date{margin-top:100px}
     #clock{font-size:60px;}
+    #todo-list{height:200px;}
 }
 @media (max-width:425px) {
     #login-form{margin-top:20px;}
     #date{margin-top:50px}
     #clock{font-size:50px;}
+    #todo-list{height:150px;}
     #quote{bottom:5%;}
 }
