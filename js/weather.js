@@ -18,7 +18,9 @@ function onGeoOk(position) {
     .then( googleRes => googleRes.json() )
     .then( googleData => {
         const city = document.querySelector("#weather span:last-child");
-        city.innerText = `${googleData.results[0].address_components[3].long_name}`;
+        const addressArr = googleData.results[0].formatted_address.split(" ");
+        // console.log(addressArr);
+        city.innerText = `${addressArr[2]}`;
     });
 }
 
