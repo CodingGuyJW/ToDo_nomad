@@ -6,7 +6,6 @@ function onGeoOk(position) {
     const lon = position.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=${GOOGLE_API_KEY}`;
-    console.log(lat,lon);
 
     fetch(url)
     .then( response => response.json() )
@@ -19,7 +18,6 @@ function onGeoOk(position) {
     .then( googleRes => googleRes.json() )
     .then( googleData => {
         const city = document.querySelector("#weather span:last-child");
-        // console.log(`${googleData.results[0].address_components[3].long_name}`);
         city.innerText = `${googleData.results[0].address_components[3].long_name}`;
     });
 }
